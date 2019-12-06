@@ -19,6 +19,8 @@ For now, please cite the arvix version if you find this paper/repository is help
 
 ### Dependencies
 
+Tested on Ubuntu 18.04
+
 ```
 Python 3.6
 Pytorch 1.2.0
