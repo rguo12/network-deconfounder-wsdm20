@@ -130,7 +130,7 @@ def train(epoch, X, A, T, Y1, Y0, idx_train, idx_val, model, optimizer):
     ycf_pred, _, p1 = model(X, A, 1-T)
 
     #balancing
-    rep_t1, rep_t0 = rep[idx_train][(T[idx_train] > 0).nonzero()], rep[(T[idx_train] < 1).nonzero()]
+    rep_t1, rep_t0 = rep[idx_train][(T[idx_train] > 0).nonzero()], rep[idx_train][(T[idx_train] < 1).nonzero()]
     dist, _ = utils.wasserstein(rep_t1, rep_t0, cuda=args.cuda)
 
     # print(yf_pred.shape, idx_train.shape)
