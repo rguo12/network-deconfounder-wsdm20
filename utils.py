@@ -15,14 +15,18 @@ from scipy import interp
 
 # path = '/home/ASUAD/rguo12/mcspinemo@gmail.com/2019 S/NetConf/datasets/'
 # path = './datasets/'
-def sparse_mx_to_torch_sparse_tensor(sparse_mx):
+def sparse_mx_to_torch_sparse_tensor(sparse_mx,cuda=False):
     """Convert a scipy sparse matrix to a torch sparse tensor."""
     sparse_mx = sparse_mx.tocoo().astype(np.float32)
     indices = torch.from_numpy(
         np.vstack((sparse_mx.row, sparse_mx.col)).astype(np.int64))
     values = torch.from_numpy(sparse_mx.data)
     shape = torch.Size(sparse_mx.shape)
-    return torch.sparse.FloatTensor(indices, values, shape)
+
+    sparse_tensor = torch.sparse.FloatTensor(indices, values, shape)
+    if cuda:
+        sparse_tensor = sparse_tensor.cuda()
+    return sparse_tensor
 
 def normalize(mx):
 	"""Row-normalize sparse matrix"""
