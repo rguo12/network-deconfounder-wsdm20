@@ -5,11 +5,12 @@ Code for the upcoming WSDM '20 paper, [Learning Individual Causal Effects from N
 
 For now, please cite the arvix version if you find this paper/repository is helpful.
 ```
-@article{guo2019learning,
-  title={Learning Individual Treatment Effects from Networked Observational Data},
+@inproceedings{guo2020learning,
+  title={Learning Individual Causal Effects from Networked Observational Data},
   author={Guo, Ruocheng and Li, Jundong and Liu, Huan},
-  journal={arXiv preprint arXiv:1906.03485},
-  year={2019}
+  booktitle={Proceedings of the 13th International Conference on Web Search and Data Mining},
+  pages={232--240},
+  year={2020}
 }
 ```
 
