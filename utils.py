@@ -13,8 +13,6 @@ from sklearn.metrics import roc_curve, auc
 from scipy import interp
 
 
-# path = '/home/ASUAD/rguo12/mcspinemo@gmail.com/2019 S/NetConf/datasets/'
-# path = './datasets/'
 def sparse_mx_to_torch_sparse_tensor(sparse_mx,cuda=False):
     """Convert a scipy sparse matrix to a torch sparse tensor."""
     sparse_mx = sparse_mx.tocoo().astype(np.float32)
