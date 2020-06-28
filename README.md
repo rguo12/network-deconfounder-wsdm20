@@ -1,5 +1,5 @@
 # network-deconfounder-wsdm20
-Code for the upcoming WSDM '20 paper, [Learning Individual Causal Effects from Networked Observational Data](https://arxiv.org/abs/1906.03485).
+Code for the WSDM '20 paper, [Learning Individual Causal Effects from Networked Observational Data](https://arxiv.org/abs/1906.03485).
 
 **First Work on Causal Effect Estimation Based on Graph Convolutional Neural Networks**
 
