@@ -3,7 +3,7 @@ Code for the WSDM '20 paper, [Learning Individual Causal Effects from Networked 
 
 **First Work on Causal Effect Estimation Based on Graph Convolutional Neural Networks**
 
-For now, please cite the arvix version if you find this paper/repository is helpful.
+For now, please cite the WSDM version if you find this paper/repository is helpful.
 ```
 @inproceedings{guo2020learning,
   title={Learning Individual Causal Effects from Networked Observational Data},
